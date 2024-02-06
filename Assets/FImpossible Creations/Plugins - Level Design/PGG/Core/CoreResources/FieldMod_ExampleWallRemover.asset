@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 671fd9c659a53a04eb310656f11c9125, type: 3}
-  m_Name: FieldMod_ExampleWallRemover
+  m_Name: New Modificator
   m_EditorClassIdentifier: 
   TemporaryContainer: {fileID: 0}
   Enabled: 1
@@ -36,7 +36,7 @@ MonoBehaviour:
     CellCheckMode: 0
     _Editor_SpawnerAdvancedOptionsFoldout: 0
     OnScalledGrid: 1
-    Repeat: 0
+    Repeat: 1
     DontInheritRotations: 0
     SwitchSpawnedToStatic: 0
     MultipleToSpawn: 0
@@ -54,9 +54,8 @@ MonoBehaviour:
   _editor_drawGlobalRules: 0
   _editor_drawModPackRules: 0
   _editor_shareSelected: 0
-  ParentPreset: {fileID: 0}
-  ParentPack: {fileID: 6324579637144589045, guid: 12e73cd70f60cb04083024599008d4c5,
-    type: 2}
+  ParentPreset: {fileID: 11400000, guid: 3b3005217d236204e9a219990dd29ece, type: 2}
+  ParentPack: {fileID: 6324579637144589045, guid: 12e73cd70f60cb04083024599008d4c5, type: 2}
 --- !u!114 &4281270126315789958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,7 +101,7 @@ MonoBehaviour:
   Enabled: 1
   Ignore: 0
   _editor_drawRule: 1
-  CellAllow: 1
+  CellAllow: 0
   AllConditionsMet: 1
   replaceOnTag: Wall
   CheckMode: 0
@@ -146,6 +145,8 @@ MonoBehaviour:
       Rotor: 0
       UseCondition: 0
       Condition: 0
+      ExtraString: 
+      ExtraValue: 0
       ToCheck:
       - {x: 0, y: 0, z: 0}
       EditorDisplayColor: {r: 0.4, g: 0.4, b: 1, a: 0.95}
