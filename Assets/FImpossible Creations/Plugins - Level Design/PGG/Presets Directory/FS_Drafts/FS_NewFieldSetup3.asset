@@ -1,0 +1,312 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2237473576111137124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f132315e3189e59479a1674dc7e52576, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  FieldModificators:
+  - {fileID: -345182598294754750}
+  - {fileID: 8689801178689118729}
+  ParentPreset: {fileID: 11400000}
+  DisableWholePackage: 0
+  SeedMode: 0
+  CustomSeed: 0
+  ModPackType: 0
+  TagForAllSpawners: 
+  CombineSpawns: 0
+  Variables: []
+  CallOnAllMod: {fileID: 0}
+  CallOnAllSpawners:
+    Enabled: 0
+    Name: 
+    SpawnerTag: 
+    StampPrefabID: 0
+    Parent: {fileID: 0}
+    Rules: []
+    Mode: 0
+    CellCheckMode: 0
+    _Editor_SpawnerAdvancedOptionsFoldout: 0
+    OnScalledGrid: 0
+    Repeat: 0
+    DontInheritRotations: 0
+    SwitchSpawnedToStatic: 0
+    MultipleToSpawn: 0
+    UseGlobalRules: 0
+    UseParentPackageRules: 0
+    _wasEnablingGlobalRules: 0
+    ScaleAccess: 0
+    DisplayPreviewGUI: 0
+    IsSubSpawner: 0
+    _EditorDisplaySpawnerHeader: 0
+  _EditorDisplayCallOnAll: 0
+--- !u!114 &-345182598294754750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671fd9c659a53a04eb310656f11c9125, type: 3}
+  m_Name: floor
+  m_EditorClassIdentifier: 
+  TemporaryContainer: {fileID: 0}
+  Enabled: 1
+  ModTag: 
+  DrawMeshAndBox: 0
+  Combine: 0
+  RunEmittersIfContains: 0
+  DrawSetupFor: 0
+  OStamp: {fileID: 0}
+  DrawObjectStamps: 1
+  OMultiStamp: {fileID: 0}
+  PrefabsList:
+  - Prefab: {fileID: 919132149155446097, guid: 6c8146e3c8e6a5e4b9e35cb85452d0be, type: 3}
+    MainCollider: {fileID: 0}
+    subID: 0
+    _refMesh: {fileID: -5495902117074765545, guid: 935dbe748c543774a828530f338c335c, type: 3}
+    _refCol: {fileID: 0}
+  DrawMultiObjectStamps: 1
+  Spawners:
+  - Enabled: 1
+    Name: Ceiling-Base
+    SpawnerTag: 
+    StampPrefabID: 0
+    Parent: {fileID: -345182598294754750}
+    Rules: []
+    Mode: 0
+    CellCheckMode: 0
+    _Editor_SpawnerAdvancedOptionsFoldout: 0
+    OnScalledGrid: 0
+    Repeat: 1
+    DontInheritRotations: 0
+    SwitchSpawnedToStatic: 0
+    MultipleToSpawn: 0
+    UseGlobalRules: 1
+    UseParentPackageRules: 1
+    _wasEnablingGlobalRules: 1
+    ScaleAccess: 1
+    DisplayPreviewGUI: 1
+    IsSubSpawner: 0
+    _EditorDisplaySpawnerHeader: 1
+  SubSpawners: []
+  VariantOf: {fileID: 0}
+  _editor_drawStamp: 1
+  _editor_drawSpawners: 1
+  _editor_drawGlobalRules: 0
+  _editor_drawModPackRules: 0
+  _editor_shareSelected: 0
+  ParentPreset: {fileID: 11400000}
+  ParentPack: {fileID: -2237473576111137124}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6c361108247f045b5087f48c0c7951, type: 3}
+  m_Name: FS_NewFieldSetup3
+  m_EditorClassIdentifier: 
+  CellSize: 2
+  NonUniformSize: 0
+  NonUniformCellSize: {x: 2, y: 2, z: 2}
+  InfoText: Here write custom note about FieldSetup
+  Variables:
+  - Name: Spawn Propability Multiplier
+    v3Val: {x: 1, y: 0, z: 0}
+    colVal: {r: 0, g: 0, b: 0, a: 0}
+    str: 
+    mat: {fileID: 0}
+    gameObj: {fileID: 0}
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    unityObj: {fileID: 0}
+    helper: {x: 0, y: 5, z: 0}
+    additionalHelperRef: {fileID: 0}
+    ValueType: 1
+    helpForFieldCommand: 0
+    displayOnScene: 0
+    allowTransformFollow: 0
+    FloatSwitch: 0
+  - Name: Spawn Count Multiplier
+    v3Val: {x: 1, y: 0, z: 0}
+    colVal: {r: 0, g: 0, b: 0, a: 0}
+    str: 
+    mat: {fileID: 0}
+    gameObj: {fileID: 0}
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    unityObj: {fileID: 0}
+    helper: {x: 0, y: 5, z: 0}
+    additionalHelperRef: {fileID: 0}
+    ValueType: 1
+    helpForFieldCommand: 0
+    displayOnScene: 0
+    allowTransformFollow: 0
+    FloatSwitch: 0
+  DoorsModificator: {fileID: 11400000, guid: 7500e28d48a8ac44da90dfc8719e91ef, type: 2}
+  EraseWallModificator: {fileID: 11400000, guid: c5bd286613ebcb24c932c8d5e7f79f9b, type: 2}
+  CellsInstructions:
+  - Title: Door Hole
+    InstructionType: 1
+    TargetModification: {fileID: 11400000, guid: 7500e28d48a8ac44da90dfc8719e91ef, type: 2}
+    Tags: Props
+    InstructionArgument: 
+    Foldout: 1
+    extraMod: {fileID: 0}
+    extraPack: {fileID: 0}
+  - Title: Clear Wall
+    InstructionType: 3
+    TargetModification: {fileID: 11400000, guid: c5bd286613ebcb24c932c8d5e7f79f9b, type: 2}
+    Tags: 
+    InstructionArgument: 
+    Foldout: 1
+    extraMod: {fileID: 0}
+    extraPack: {fileID: 0}
+  RootPack: {fileID: -2237473576111137124}
+  UtilityModificators: []
+  ModificatorPacks:
+  - {fileID: -2237473576111137124}
+  Ignores: []
+  DontSpawnOn: 
+  SelfInjections: []
+  disabledMods: []
+  CustomPostEvents: []
+  AddReflectionProbes: 0
+  MainReflectionSettings: {fileID: 11400000, guid: dabe448206028124294db7edb02eed3f, type: 2}
+  AddMultipleProbes: 0
+  SmallerReflSettings: {fileID: 11400000, guid: 290a908b3df7c6a4a84c21c932841cde, type: 2}
+  MiniReflSettings: {fileID: 11400000, guid: b243a7973537dbf4faacf7bbda74dada, type: 2}
+  SmallerReflLowerSpaceThan: 4
+  LimitSingleProbeSize: 0
+  TriggerColliderGeneration: 0
+  TriggerGenSettings:
+    TriggersLayer: 0
+    ScaleupTriggers: 1
+    FillHeight: 1
+    MaxCellChecks: 10
+    JoinBounds: 1
+    GenerateRelations: 1
+    GroupUpToSize: 8
+    MaxGroupDistance: 8
+--- !u!114 &2560649311072433919
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc77d951f142764987a7f4ca1cf8f61, type: 3}
+  m_Name: SR_SpawningPropability-[prop]
+  m_EditorClassIdentifier: 
+  Logic: 0
+  Negate: 0
+  Global: 0
+  Enabled: 1
+  Ignore: 0
+  _editor_drawRule: 1
+  CellAllow: 1
+  AllConditionsMet: 1
+  Propability: 0.333
+  PropabilityMulVariable:
+    name: 
+    requiredType: 1
+    Tooltip: 
+--- !u!114 &8689801178689118729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671fd9c659a53a04eb310656f11c9125, type: 3}
+  m_Name: prop
+  m_EditorClassIdentifier: 
+  TemporaryContainer: {fileID: 0}
+  Enabled: 1
+  ModTag: 
+  DrawMeshAndBox: 0
+  Combine: 0
+  RunEmittersIfContains: 0
+  DrawSetupFor: 0
+  OStamp: {fileID: 0}
+  DrawObjectStamps: 1
+  OMultiStamp: {fileID: 0}
+  PrefabsList:
+  - Prefab: {fileID: 7897753526492407738, guid: ea41a67f7cbe4b44ba8efa695c92c452, type: 3}
+    MainCollider: {fileID: 1497302342229129703, guid: ea41a67f7cbe4b44ba8efa695c92c452, type: 3}
+    subID: 0
+    _refMesh: {fileID: 6121590469811200223, guid: b8c27da8bc12f7d499597a1970dffec8, type: 3}
+    _refCol: {fileID: 1497302342229129703, guid: ea41a67f7cbe4b44ba8efa695c92c452, type: 3}
+  - Prefab: {fileID: 3505362477745029625, guid: e1aa8cc3f9d542443acc9696d6a05be5, type: 3}
+    MainCollider: {fileID: 7312890235356301951, guid: e1aa8cc3f9d542443acc9696d6a05be5, type: 3}
+    subID: 0
+    _refMesh: {fileID: -6264831526926562434, guid: 9bf58d489d0dad444baa41c0a34aa0f0, type: 3}
+    _refCol: {fileID: 7312890235356301951, guid: e1aa8cc3f9d542443acc9696d6a05be5, type: 3}
+  - Prefab: {fileID: 201750969210362442, guid: ab4c5b166a28b2f459996e391c3e6027, type: 3}
+    MainCollider: {fileID: 1682152216915606813, guid: ab4c5b166a28b2f459996e391c3e6027, type: 3}
+    subID: 0
+    _refMesh: {fileID: -4119317738140548247, guid: 4654f00b707616f40b985bf8bcfcf579, type: 3}
+    _refCol: {fileID: 1682152216915606813, guid: ab4c5b166a28b2f459996e391c3e6027, type: 3}
+  - Prefab: {fileID: 824523428643709625, guid: 88bc670ed6a523649b387711224654d3, type: 3}
+    MainCollider: {fileID: 6253823924574413758, guid: 88bc670ed6a523649b387711224654d3, type: 3}
+    subID: 0
+    _refMesh: {fileID: 381947130776709163, guid: e82cf095d1db73b43a2260a1544ea889, type: 3}
+    _refCol: {fileID: 6253823924574413758, guid: 88bc670ed6a523649b387711224654d3, type: 3}
+  DrawMultiObjectStamps: 1
+  Spawners:
+  - Enabled: 1
+    Name: PR_Bottle
+    SpawnerTag: 
+    StampPrefabID: -1
+    Parent: {fileID: 8689801178689118729}
+    Rules:
+    - {fileID: 2560649311072433919}
+    Mode: 0
+    CellCheckMode: 0
+    _Editor_SpawnerAdvancedOptionsFoldout: 0
+    OnScalledGrid: 0
+    Repeat: 1
+    DontInheritRotations: 0
+    SwitchSpawnedToStatic: 0
+    MultipleToSpawn: 0
+    UseGlobalRules: 1
+    UseParentPackageRules: 1
+    _wasEnablingGlobalRules: 1
+    ScaleAccess: 1
+    DisplayPreviewGUI: 1
+    IsSubSpawner: 0
+    _EditorDisplaySpawnerHeader: 1
+  SubSpawners: []
+  VariantOf: {fileID: 0}
+  _editor_drawStamp: 1
+  _editor_drawSpawners: 1
+  _editor_drawGlobalRules: 0
+  _editor_drawModPackRules: 0
+  _editor_shareSelected: 0
+  ParentPreset: {fileID: 11400000}
+  ParentPack: {fileID: -2237473576111137124}
